@@ -1,0 +1,28 @@
+@Metadata.layer: #CORE
+annotate view ZFI_TAXGROUP
+    with 
+{
+  @UI: {
+        facet: [ {  id: 'information',
+                    type: #COLLECTION,
+                    label: 'TAX GROUP',
+                    position: 10 },
+                 {  parentId: 'information',
+                    id: 'headerInfomation',
+                    type: #IDENTIFICATION_REFERENCE,
+                    purpose: #STANDARD,
+                    position: 10 } ] }
+     @UI: {  lineItem:       [ { position: 10, label: 'Taxgroup' } ],
+       identification: [ { position: 10 , label: 'Taxgroup'} ],
+       selectionField: [ { position: 10 } ] }
+    Taxgroup;
+         @UI: {  lineItem:       [ { position: 20, label: 'Rtype' } ],
+       identification: [ { position: 20 , label: 'Rtype'} ],
+       selectionField: [ { position: 20 } ] }
+    Rtype;
+         @UI: {  lineItem:       [ { position: 30, label: 'Description' } ],
+       identification: [ { position: 30 , label: 'Description'} ],
+       selectionField: [ { position: 30 } ] }
+    Description;
+    
+}

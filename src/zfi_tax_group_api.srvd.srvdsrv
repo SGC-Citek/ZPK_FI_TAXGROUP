@@ -1,0 +1,4 @@
+@EndUserText.label: 'Api Tax Group'
+define service ZFI_TAX_GROUP_API {
+  expose ZFI_TAXGROUP;
+}

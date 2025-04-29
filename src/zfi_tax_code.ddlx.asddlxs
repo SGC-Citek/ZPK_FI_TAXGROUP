@@ -1,0 +1,35 @@
+@Metadata.layer: #CORE
+annotate view ZFI_TAXCODE
+    with 
+{   
+  @UI: {
+        facet: [ {  id: 'information',
+                    type: #COLLECTION,
+                    label: 'TAX CODE',
+                    position: 10 },
+                 {  parentId: 'information',
+                    id: 'headerInfomation',
+                    type: #IDENTIFICATION_REFERENCE,
+                    purpose: #STANDARD,
+                    position: 10 } ] }
+     @UI: {  lineItem:       [ { position: 10, label: 'Taxcode' } ],
+       identification: [ { position: 10 , label: 'Taxcode'} ],
+       selectionField: [ { position: 10 } ] }
+    Taxcode;
+         @UI: {  lineItem:       [ { position: 20, label: 'Taxgroup' } ],
+       identification: [ { position: 20 , label: 'Taxgroup'} ],
+       selectionField: [ { position: 20 } ] }
+    Taxgroup;
+    @UI: {  lineItem:       [ { position: 30, label: 'Rtype' } ],
+       identification: [ { position: 30 , label: 'Rtype'} ],
+       selectionField: [ { position: 30 } ] }
+    Rtype;
+         @UI: {  lineItem:       [ { position: 40, label: 'Value' } ],
+       identification: [ { position: 40 , label: 'Value'} ],
+       selectionField: [ { position: 40 } ] }
+    Value;
+         @UI: {  lineItem:       [ { position: 50, label: 'Description' } ],
+       identification: [ { position: 50 , label: 'Description'} ],
+       selectionField: [ { position: 50 } ] }
+    Description;   
+}

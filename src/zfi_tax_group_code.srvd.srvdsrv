@@ -1,0 +1,4 @@
+@EndUserText.label: 'Tax group code service definition'
+define service ZFI_TAX_GROUP_CODE {
+  expose ZFI_TAX_GROUP_CODE;
+}

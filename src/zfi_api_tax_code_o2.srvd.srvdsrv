@@ -1,0 +1,4 @@
+@EndUserText.label: 'Tax code api o2'
+define service ZFI_API_TAX_CODE_O2 {
+  expose ZFI_TAXCODE;
+}

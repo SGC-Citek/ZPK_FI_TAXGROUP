@@ -1,0 +1,9 @@
+@Metadata.layer: #CORE
+annotate view ZFI_TAX_GROUP_CODE
+    with 
+{
+    @UI:{selectionField: [ { position: 10 } ] }
+    Taxgroup;
+    @UI:{selectionField: [ { position: 20 } ] }
+    Rtype;
+}

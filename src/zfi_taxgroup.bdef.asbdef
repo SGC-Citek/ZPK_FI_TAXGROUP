@@ -1,0 +1,13 @@
+managed implementation in class zbp_fi_taxgroup unique;
+strict ( 2 );
+
+define behavior for ZFI_TAXGROUP //alias <alias_name>
+persistent table ztb_taxgroup
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}
